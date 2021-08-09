@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 *, *::after, *::before {
-    margin: 1.2rem;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -12,16 +10,20 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #e5e5f7;
-    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 35px 35px, linear-gradient(#000000 2.8000000000000003px, transparent 2.8000000000000003px) 0 -1.4000000000000001px, linear-gradient(90deg, #000000 2.8000000000000003px, #e5e5f7 2.8000000000000003px) -1.4000000000000001px 0;
-    background-size: 70px 70px, 70px 70px, 35px 35px, 35px 35px;
+    background-color: #a6a6fff5;
+    background-image: url(pattern.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: luminosity;
 }
 
 main {
+    margin: 2rem;
     border: none;
     padding: 0.5rem;
     border-radius: 20px;
-    background-color: #ababfd;
+    background-color: #a6a6ffb9;
     box-shadow: 0px 0px 15px 5px rgb(75, 75, 75);
 }
 
@@ -42,7 +44,7 @@ h1 {
     padding: 0.5rem;
     max-width: 20%;
     margin: 2rem auto;
-    background-color: rgb(255, 170, 184);
+    background-color: rgba(255, 170, 184, 0.733);
 }
 
 input {

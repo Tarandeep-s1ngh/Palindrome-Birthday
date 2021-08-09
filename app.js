@@ -167,9 +167,6 @@ function getNextPalindromeDate(date) {
 //     var month = date.month;
 //     var year = date.year;
 
-//     var monthswith31 = [1, 3, 5, 7, 8, 10, 12];
-//     var monthsWith30 = [4, 6, 9, 11];
-
 //     if(month === 3) {
 //         if(isLeapYear(year)) {
 //             if(day < 1) {
@@ -231,15 +228,21 @@ function getNextPalindromeDate(date) {
 // }
 
 // function checkNearest(nextDate, prevDate, date) {
-//     if( (nextDate - date) >= (date - prevDate) ) {
-//         return prevDate;
+
+//     const nd = nextDate;
+//     const pd = prevDate;
+//     const dt = date;
+
+//     if( (nd - dt) > (dt - pd) ) {
+//         console.log("hello");
+//         return pd;
 //     }
 //     else
-//     return nextDate;
+//     return nd;
 // }
 
 // var nextDate = {
-//     day: 1,
+//     day: 19,
 //     month: 8,
 //     year: 2021
 // };
@@ -251,7 +254,7 @@ function getNextPalindromeDate(date) {
 // };
 
 // var date = {
-//     day: 9,
+//     day: 10,
 //     month: 8,
 //     year: 2021
 // };
