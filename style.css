@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+*, *::after, *::before {
+    margin: 1.2rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    text-align: center;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e5e5f7;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 35px 35px, linear-gradient(#000000 2.8000000000000003px, transparent 2.8000000000000003px) 0 -1.4000000000000001px, linear-gradient(90deg, #000000 2.8000000000000003px, #e5e5f7 2.8000000000000003px) -1.4000000000000001px 0;
+    background-size: 70px 70px, 70px 70px, 35px 35px, 35px 35px;
+}
+
+main {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: #ababfd;
+    box-shadow: 0px 0px 15px 5px rgb(75, 75, 75);
+}
+
+h1 {
+    margin: 2rem 0 1rem;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.clr-change {
+    margin: 0;
+    color: darkmagenta;
+}
+
+#notice-div {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+    max-width: 20%;
+    margin: 2rem auto;
+    background-color: rgb(255, 170, 184);
+}
+
+input {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    min-width: 20%;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+button {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.7rem 1rem;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 2px 5px 1px black;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+
+}
+
+#output {
+    display: block;
+    margin: auto;
+    max-width: 55%;
+    padding-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}

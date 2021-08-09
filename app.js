@@ -17,11 +17,11 @@ function clickHandler(e) {
         var isPalindrome = checkPalindromeForAllDateFormats(date);
 
         if(isPalindrome) {
-            output.innerText = 'Yay! Your Birthday is a Palindrome! 🥳';
+            output.innerText = `Wow! Your Birthday is a Palindrome! 🥳`;
         }
         else {
             var [count, nextDate] = getNextPalindromeDate(date);
-            output.innerText = 'Aww! Your birthdate is not palindrome. The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year} You missed it by ${count} days. 🙁';
+            output.innerText = `Aww! Your birthday is not a palindrome. The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}. You missed it by ${count} days. 🙁`;
         }
     }
 }
@@ -161,3 +161,99 @@ function getNextPalindromeDate(date) {
     
     return [count, nextDate];
 }
+
+// function getPrevDate(date) {
+//     var day = date.day - 1;
+//     var month = date.month;
+//     var year = date.year;
+
+//     var monthswith31 = [1, 3, 5, 7, 8, 10, 12];
+//     var monthsWith30 = [4, 6, 9, 11];
+
+//     if(month === 3) {
+//         if(isLeapYear(year)) {
+//             if(day < 1) {
+//                 day = 29;
+//                 month--;
+//             }
+//         }
+//         else {
+//             if(day < 1) {
+//                 day  = 28;
+//                 month--;
+//             }
+//         }
+    
+//     }
+//     else if(month === 2 || month === 4 || month === 6 || month === 8 || month === 9 || month === 11 ) {
+//         if(day < 1) {
+//             day = 31;
+//             month--;
+//         }
+//     }
+
+//     else if(month === 1) {
+//         if(day < 1) {
+//             day = 31;
+//             month = 12;
+//             year--;
+//         }
+//     }
+
+//     else {
+//         if(day < 1) {
+//             day = 30;
+//             month--;
+//         }
+//     }
+
+//     return {
+//         day: day,
+//         month: month,
+//         year: year
+//     };
+// }
+
+// function getPrevPalindromeDate(date) {
+//     var count = 0;
+//     var prevDate = getPrevDate(date);
+
+//     while(1) {
+//         count++;
+//         var isPalindrome = checkPalindromeForAllDateFormats(prevDate);
+//         if(isPalindrome) {
+//             break;
+//         }
+//         prevDate = getPrevDate(prevDate);
+//     }
+    
+//     return [count, prevDate];
+// }
+
+// function checkNearest(nextDate, prevDate, date) {
+//     if( (nextDate - date) >= (date - prevDate) ) {
+//         return prevDate;
+//     }
+//     else
+//     return nextDate;
+// }
+
+// var nextDate = {
+//     day: 1,
+//     month: 8,
+//     year: 2021
+// };
+
+// var prevDate = {
+//     day: 8,
+//     month: 8,
+//     year: 2021
+// };
+
+// var date = {
+//     day: 9,
+//     month: 8,
+//     year: 2021
+// };
+
+// console.log(checkNearest(nextDate, prevDate, date));

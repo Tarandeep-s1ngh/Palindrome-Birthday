@@ -10,13 +10,23 @@
 </head>
 <body>
 
-    <h1>Palindrome Birthday</h1>
+        <main>
 
-    <input type="date" id="date-input" />
+            <h1>Check out if your <span class="clr-change">Birthdate</span> is <span class="clr-change">Palidrome.</span></h1>
+            <h2>A palindrome is a word/number which reads the same backward as forward</h2>
 
-    <button id="check-btn">Check</button>
+            <div style="color: darkred; font-weight: 600;">This app checks your birthdate in 6 formats yyyy-mm-dd, dd-mm-yyyy, mm-dd-yy, dd-mm-yy, mm-dd-yy, yy-mm-dd</div>
 
-    <div id="output"></div>
+            <div id="notice-div"> <div style="font-weight: bold; margin: 0; padding-bottom: 5px;">Notice:</div> We are not storing any personal information!</div>
+
+            <input type="date" id="date-input" required />
+            
+            <button id="check-btn">Check</button>
+            
+            <div id="output"></div>
+
+
+        </main>
 
     <script src="app.js"></script>
 </body>
