@@ -7,6 +7,7 @@
     <title>Palindrome Birthday</title>
 
     <link href="style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
 
@@ -22,6 +23,10 @@
             <input type="date" id="date-input" required />
             
             <button id="check-btn">Check</button>
+
+            <div class="loading-animation">
+                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_xiwiffnd.json"  background="transparent"  speed="1.2" id="loading-lottie" loop autoplay></lottie-player>
+            </div>
             
             <div id="output"></div>
 
