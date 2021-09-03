@@ -2,7 +2,7 @@
 var dateInput = document.querySelector("#date-input");
 var checkBtn = document.querySelector("#check-btn");
 var output = document.querySelector("#output");
-var loadingDiv = document.querySelector(".loading-animation");;
+var loadingDiv = document.querySelector(".loading-animation");
 
 loadingDiv.style.display = "none";
 
